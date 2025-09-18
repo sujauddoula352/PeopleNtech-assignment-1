@@ -21,24 +21,75 @@
   <body>
     <header>
       <!-- ==================== NAVBAR ===================== -->
-    <section class="drawer">
-      <input id="menu-drawer" type="checkbox" class="drawer-toggle" />
+      <section class="drawer">
+        <input id="menu-drawer" type="checkbox" class="drawer-toggle" />
 
-      <div class="drawer-content flex flex-col">
-        <div
-          class="navbar bg-base-100 fixed justify-between top-0 z-50 shadow-sm px-4"
-        >
-          <div class="navbar-start">
-            <a href="#" class="text-3xl md:text-4xl font-bold">
-              SOH<span class="text-[#f4623a]">E</span>L
-            </a>
+        <div class="drawer-content flex flex-col">
+          <div
+            class="navbar bg-base-100 fixed justify-between top-0 z-50 shadow-sm px-4"
+          >
+            <div class="navbar-start">
+              <a href="#" class="text-3xl md:text-4xl font-bold">
+                SOH<span class="text-[#f4623a]">E</span>L
+              </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex gap-8 items-center text-sm z-50">
+              <ul class="menu menu-horizontal text-sm font-medium">
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li>
+                  <a href="#services" class="hover:text-blue-600">Services</a>
+                </li>
+                <li>
+                  <a href="#Protfolio" class="hover:text-blue-600">Protfolio</a>
+                </li>
+                <li>
+                  <a href="#Contact" class="hover:text-blue-600">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="lg:hidden">
+              <label for="menu-drawer" class="btn btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </label>
+            </div>
           </div>
+        </div>
 
-          <!-- Desktop Menu -->
-          <div class="hidden lg:flex gap-8 items-center text-sm z-50">
-            <ul class="menu menu-horizontal text-sm font-medium">
-              <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-              <li><a href="serviecs" class="hover:text-blue-600">Services</a></li>
+        <!-- Drawer Sidebar -->
+        <div class="drawer-side">
+          <label for="menu-drawer" class="drawer-overlay"></label>
+          <div class="p-4 w-64 min-h-full bg-base-100">
+            <div class="flex justify-between items-center mb-3">
+              <h5 class="font-semibold text-lg">Menu</h5>
+              <label
+                for="menu-drawer"
+                class="text-xl text-gray-600 hover:text-gray-800 cursor-pointer"
+                >✕</label
+              >
+            </div>
+            <hr class="mb-4" />
+            <ul class="space-y-2 font-medium">
+              <li><a href="#about" class="hover:text-blue-600">About</a></li>
+              <li>
+                <a href="#services" class="hover:text-blue-600">Services</a>
+              </li>
               <li>
                 <a href="#Protfolio" class="hover:text-blue-600">Protfolio</a>
               </li>
@@ -47,78 +98,64 @@
               </li>
             </ul>
           </div>
-
-          <!-- Mobile Hamburger -->
-          <div class="lg:hidden">
-            <label for="menu-drawer" class="btn btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </label>
-          </div>
         </div>
-      </div>
+      </section>
+      <!-- ==================== NAVBAR END ===================== -->
 
-      <!-- Drawer Sidebar -->
-      <div class="drawer-side">
-        <label for="menu-drawer" class="drawer-overlay"></label>
-        <div class="p-4 w-64 min-h-full bg-base-100">
-          <div class="flex justify-between items-center mb-3">
-            <h5 class="font-semibold text-lg">Menu</h5>
-            <label
-              for="menu-drawer"
-              class="text-xl text-gray-600 hover:text-gray-800 cursor-pointer"
-              >✕</label
-            >
-          </div>
-          <hr class="mb-4" />
-          <ul class="space-y-2 font-medium">
-            <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-            <li><a href="#services" class="hover:text-blue-600">Services</a></li>
-            <li>
-              <a href="#Protfolio" class="hover:text-blue-600">Protfolio</a>
-            </li>
-            <li>
-              <a href="#Contact" class="hover:text-blue-600">Contact</a>
-            </li>
-          </ul>
+      <!-- ==================== Banner START ===================== -->
+      <section
+        class="headerbg h-screen flex items-center justify-center text-center px-4"
+      >
+        <div class="max-w-2xl">
+          <h1 class="text-3xl md:text-5xl font-bold text-white mb-6">
+            Your Favorite Place for Free tailwindcss Themes
+          </h1>
+          <hr
+                class="my-6 mx-auto w-24 border-t-4 border-orange-500 opacity-70"
+              />
+          <p class="text-white/80 text-lg">
+            Start Tailwind can help you build better websites using the Tailwind
+            framework! Just download a theme and start customizing, no strings
+            attached!
+          </p>
+          <button
+            class="px-8 py-3 rounded-full mt-8 text-white hover:bg-[#cf4631] cursor-pointer bg-[#cf5531]"
+          >
+            FIND OUT MORE
+          </button>
         </div>
-      </div>
-    </section>
-    <!-- ==================== NAVBAR END ===================== -->
-
-    <!-- ==================== Banner START ===================== -->
-    <section
-      class="headerbg h-screen flex items-center justify-center text-center px-4"
-    >
-      <div class="max-w-2xl">
-        <h1 class="text-3xl md:text-5xl font-bold text-white mb-6">
-          Your Favorite Place for Free tailwindcss Themes
-        </h1>
-        <p class="text-white/80 text-lg">
-          Start Tailwind can help you build better websites using the Tailwind
-          framework! Just download a theme and start customizing, no strings
-          attached!
-        </p>
-        <button class="px-8 py-3 rounded-full mt-8 text-white hover:bg-[#cf4631] cursor-pointer bg-[#cf5531]">FIND OUT MORE</button>
-      </div>
-      
-    </section>
-  <!-- ==================== Banner END ===================== -->
+      </section>
+      <!-- ==================== Banner END ===================== -->
     </header>
     <main>
-      <div class="text-2xl">sujauddoula sohel</div>
+      <!-- ==================== About section start ===================== -->
+      <section id="about" class="bg-[#f4623a] py-20">
+        <div class="container mx-auto px-4 lg:px-5">
+          <div class="flex justify-center">
+            <div class="max-w-2xl text-center">
+              <h2 class="text-white text-3xl md:text-4xl font-bold mt-0">
+                We've got what you need!
+              </h2>
+              <hr
+                class="my-6 mx-auto w-24 border-t-4 border-white opacity-70"
+              />
+              <p class="text-white/75 mb-6 text-lg">
+                Start Bootstrap has everything you need to get your new website
+                up and running in no time! Choose one of our open source, free
+                to download, and easy to use themes! No strings attached!
+              </p>
+              <a
+                href="#services"
+                class="inline-block bg-white text-[#f4623a] font-semibold text-lg px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+              >
+                Get Started!
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== About section end ===================== -->
     </main>
     <footer></footer>
     <script src="js/main.js"></script>
